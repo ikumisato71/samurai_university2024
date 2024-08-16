@@ -1,4 +1,10 @@
 
+<?php
+/*
+Template Name: 卒業生の声
+Template Post Type: post
+ */
+?>
 <?php get_header(); ?>
 
 <?php if(have_posts()) :?>

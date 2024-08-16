@@ -176,11 +176,13 @@
                         <?php 
                           $content = wp_trim_words( get_the_content() ,  50, '...');
                           echo $content;
+                          echo "<br/><br/><br/>";
                         ?>
                       </div>
                     </div>
                   </div>
                 </div>
+                
               <?php endforeach; ?>
               <!-- 使用した投稿データをリセット -->
               <?php wp_reset_postdata(); ?>

@@ -77,7 +77,7 @@
     </div>
     <!-- メインビジュアルここまで -->
 
-    <!-- ニュースとイベント -->
+    <!-- ニュースとイベントと卒業生の声 -->
     <div class="news">
       <div class="footer_row">
         <div class="row news_row">
@@ -202,7 +202,7 @@
                    // カテゴリー名
                     'category_name' => 'graduates',
                    // 1ページに表示する投稿数
-                    'posts_per_page' => 2,
+                    'posts_per_page' => 3,
                 );
                // データの取得
                 $posts = get_posts($args);
@@ -241,7 +241,7 @@
         </div>
       </div>
     </div>
-    <!-- ニュースとイベントここまでと卒業生の声-->
+    <!-- ニュースとイベントと卒業生の声ここまで-->
 
     <!-- コース -->
     <div class="courses">

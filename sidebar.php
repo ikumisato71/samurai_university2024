@@ -13,7 +13,8 @@
              'title_li' => '',  // リストの外側に表示するタイトルと表示形式（''であれば何も表示しない）
             );
             wp_list_categories( $args ); 
-          ?>                </ul>
+          ?>              
+            </ul>
               </div>
             </div>
             <div class="category">

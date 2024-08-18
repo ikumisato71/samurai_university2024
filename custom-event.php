@@ -2,7 +2,7 @@
 /*
 Template Name: イベント投稿ページ
 Template Post Type: post
- */
+*/
 ?>
 <?php get_header(); ?>
 
@@ -20,7 +20,8 @@ Template Post Type: post
             $catname = $cat[0]->cat_name;
           ?>
             <div><?php echo $catslug; ?></div>
-            <div><?php echo $catname; ?></div>          </div>
+            <div><?php echo $catname; ?></div>          
+          </div>
         </div>
       </div>
     </div>
@@ -35,7 +36,8 @@ Template Post Type: post
             <div class="tab_panels">
               <!-- Description -->
               <div class="tab_panel">
-              <div class="tab_panel_title"><?php echo $catname; ?></div>                <div class="tab_panel_content">
+              <div class="tab_panel_title"><?php echo $catname; ?></div>                
+              <div class="tab_panel_content">
                   <div class="tab_panel_text">
                     <div class="news_posts_small">
                       <div class="row">
@@ -63,21 +65,23 @@ Template Post Type: post
                             <span>日付：<?php echo post_custom('date'); ?> </span>  
                             </div>
                             <div>
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/yen-sign-solid.png" alt="" />
-                            <span>参加費：<?php 
-                                      if(post_custom('fee') == 0) {
-                                        echo '無料';
-                                      } else {
-                                        echo '¥' . number_format(post_custom('fee'));
-                                      }
-                                    ?></span>                          </div>
+                              <img src="<?php echo get_template_directory_uri(); ?>/images/yen-sign-solid.png" alt="" />
+                              <span>参加費：<?php 
+                                  if(post_custom('fee') == 0) {
+                                      echo '無料';
+                                  } else {
+                                      echo '¥' . number_format(post_custom('fee'));
+                                  }
+                                        ?></span>                          
+                            </div>
                           <div class="news_post_meta">
                           <?php the_content(); ?>                          
                           </div>
                           <hr />
                           <div class="social_share">
                           <img src="<?php echo get_template_directory_uri(); ?>/images/facebook-square-brands.png" alt=""/>
-                          <img src="<?php echo get_template_directory_uri(); ?>/images/twitter-square-brands.png" alt="" />                          </div>
+                          <img src="<?php echo get_template_directory_uri(); ?>/images/twitter-square-brands.png" alt="" />                         
+                        </div>
                         </div>
                       </div>
                     </div>

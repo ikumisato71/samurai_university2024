@@ -27,7 +27,7 @@ Template Post Type: post
     </div>
 
     <!-- Post 部分 -->
-    <div class="course">
+    < class="course">
       <div class="row content-body">
         <!-- Course -->
         <div class="col-lg-8">
@@ -77,6 +77,7 @@ Template Post Type: post
                           <div class="news_post_meta">
                           <?php the_content(); ?>                          
                           </div>
+
                           <hr />
                           <div class="social_share">
                           <img src="<?php echo get_template_directory_uri(); ?>/images/facebook-square-brands.png" alt=""/>
@@ -90,16 +91,18 @@ Template Post Type: post
               </div>
             </div>
           </div>
-        </div>
+        </div>                            
+      </div>
+
         <?php endwhile; ?>
       <?php endif; ?>
 
         <!--  Sidebar -->
         <div class="col-lg-4" style="background-color: #2b7b8e33">
-          <div class="sidebar">
+
           <?php get_sidebar(); ?>          
           </div>
         </div>
       </div>
-    </div>
+    
     <?php get_footer(); ?>

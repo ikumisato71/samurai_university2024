@@ -27,7 +27,7 @@ Template Post Type: post
     </div>
 
     <!-- Post 部分 -->
-    < class="course">
+    <div class="course">
       <div class="row content-body">
         <!-- Course -->
         <div class="col-lg-8">
@@ -54,7 +54,7 @@ Template Post Type: post
                         </div>
                         <div class="col-lg-10 col-md-10 col-sx-12">
                           <div class="news_post_small_header">
-                          <img src="<?php echo get_template_directory_uri( );?>/images/tags-solid.png" alt="" /> イベント
+                          <img src="<?php echo get_template_directory_uri( );?>/images/tags-solid.png" alt="" /> イベント<?php echo $catname; ?>
                           </div>                          
                           <div class="news_detail_title">
                           <?php the_title(); ?>
@@ -74,6 +74,7 @@ Template Post Type: post
                                   }
                                         ?></span>                          
                             </div>
+                          </div>
                           <div class="news_post_meta">
                           <?php the_content(); ?>                          
                           </div>
@@ -92,7 +93,7 @@ Template Post Type: post
             </div>
           </div>
         </div>                            
-      </div>
+      
 
         <?php endwhile; ?>
       <?php endif; ?>
